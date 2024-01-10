@@ -131,6 +131,9 @@
     .header .main-nav>li>a{
       position:relative;
     }
+    .header .main-nav a:hover{
+      color: #fdd000;
+    }
     .sub-nav{
       position:absolute;
       left:0;
@@ -210,7 +213,7 @@
       transform:translateY(-50%) scaleX(0);
     }
 
-    .sec-swiper {    
+    .sec-swiper {
       height: 100vh;
     }   
     .sec h2{
@@ -237,10 +240,10 @@
       text-indent:-99999px;
     }
     .sec01 .swiper-slide:nth-child(1) a{
-      background-image:url('./images/main-slide01.jpg');
+      background-image:url('./images/main-slide09.jpg');
     }
     .sec01 .swiper-slide:nth-child(2) a{
-      background-image:url('./images/main-slide02.jpg');
+      background-image:url('./images/main-slide01.jpg');
     }
     .sec01 .swiper-slide:nth-child(3) a{
       background-image:url('./images/main-slide03.jpg');
@@ -259,6 +262,9 @@
     }
     .sec01 .swiper-slide:nth-child(8) a{
       background-image:url('./images/main-slide08.jpg');
+    }
+    .sec01 .swiper-slide:nth-child(9) a{
+      background-image:url('./images/main-slide02.jpg');
     }
     .main-swiper-pagination{
       left:0 ;
@@ -424,7 +430,7 @@
     .event-card .img-box img:hover{
       transform:scale(1.1);
     }
-    .card-con{      
+    .card-con{
       padding:1em;
       font-weight:300;
       font-size:1.2em;
@@ -483,9 +489,12 @@
     .footer-top li{
       margin-right:2em;
     }
+    .footer-top li:hover{
+      color: #333;
+    }
     .footer-bottom{
       padding:2em 0;
-      background:#333;
+      background:#212121;
     }
     .footer-bottom .container{
       display:grid;
@@ -504,7 +513,8 @@
     }
     .footer-left .img-box:nth-of-type(2),
     .footer-left .img-box:nth-of-type(3),
-    .footer-left .img-box:nth-of-type(4){
+    .footer-left .img-box:nth-of-type(4),
+    .footer-left .img-box:nth-of-type(5){
       width:40px;
       height:40px;
       margin-right:10px;
@@ -514,7 +524,13 @@
       justify-content:center;
       align-items:center;
     }
-    .footer-left address{      
+    .footer-left .img-box:nth-of-type(2):hover,
+    .footer-left .img-box:nth-of-type(3):hover,
+    .footer-left .img-box:nth-of-type(4):hover,
+    .footer-left .img-box:nth-of-type(5):hover{
+      background: #fdd000;
+    }
+    .footer-left address{
       display:grid;
       grid-template-columns:1fr;
       gap:0.5em;
@@ -751,7 +767,7 @@
 
 
     /*--------------------- 760이하  시작--------------------*/
-    @media (max-width:760px){     
+    @media (max-width:760px){
       .header h1{
         width:150px;
       }
@@ -784,10 +800,10 @@
         display:none;
       }
       .sec01 .swiper-slide:nth-child(1) a{
-        background-image:url('./images/m-main-slide01.jpg');
+        background-image:url('./images/m-main-slide09.jpg');
       }
       .sec01 .swiper-slide:nth-child(2) a{
-        background-image:url('./images/m-main-slide02.jpg');
+        background-image:url('./images/m-main-slide01.jpg');
       }
       .sec01 .swiper-slide:nth-child(3) a{
         background-image:url('./images/m-main-slide03.jpg');
@@ -806,6 +822,9 @@
       }
       .sec01 .swiper-slide:nth-child(8) a{
         background-image:url('./images/m-main-slide08.jpg');
+      }
+      .sec01 .swiper-slide:nth-child(9) a{
+        background-image:url('./images/m-main-slide02.jpg');
       }
       .art{
         width:100%;
@@ -866,7 +885,7 @@
       .event-card li{
         grid-column:1/-1;        
       }
-      .event-card li a{     
+      .event-card li a{
         flex-flow:row nowrap;
       }
       .event-card .img-box{
@@ -992,6 +1011,7 @@
                 <div class="swiper-slide main-swiper-slide"><a href="#">링크6</a></div>
                 <div class="swiper-slide main-swiper-slide"><a href="#">링크7</a></div>
                 <div class="swiper-slide main-swiper-slide"><a href="#">링크8</a></div>
+                <div class="swiper-slide main-swiper-slide"><a href="#">링크9</a></div>
               </div> 
               <div class="swiper-pagination main-swiper-pagination"></div>
             </div>  
@@ -1134,8 +1154,8 @@
                   <a href="#">
                     <div class="img-box"><img src="./images/img-event01.jpg" alt="event01"></div>
                     <div class="card-con">
-                      <h3 class="card-tit">메가 MGC커피X미니언즈 시즌</h3>
-                      <p class="card-date">2023-12-06</p>
+                      <h3 class="card-tit">[이벤트] MEGA SON! MEGA</h3>
+                      <p class="card-date">2024-01-09</p>
                     </div>
                   </a>
                 </li>
@@ -1143,17 +1163,17 @@
                   <a href="#">
                     <div class="img-box"><img src="./images/img-event02.jpg" alt="event02"></div>
                     <div class="card-con">
-                      <h3 class="card-tit">겨울시즌 오픈 기념 이벤트</h3>
-                      <p class="card-date">2023-10-25</p>
+                      <h3 class="card-tit">[이벤트] 1월~2월 메가MGC커피 X 하나페이 적립 EVENT (메가오더 전용혜택)</h3>
+                      <p class="card-date">2024-01-02</p>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <div class="img-box"><img src="./images/img-event03.jpg" alt="event03"></div>
+                    <div class="img-box"><img src="./images/img-event03.png" alt="event03"></div>
                     <div class="card-con">
-                      <h3 class="card-tit">[이벤트] 메가 MGC커피 X 우주</h3>
-                      <p class="card-date">2023-09-25</p>
+                      <h3 class="card-tit">[이벤트]1월에 만나는 PAYCO</h3>
+                      <p class="card-date">2023-12-18</p>
                     </div>
                   </a>
                 </li>
@@ -1184,6 +1204,7 @@
               <div class="img-box"><a href="#"><img src="./images/sns_blog.png" alt="블로그"></a></div>
               <div class="img-box"><a href="#"><img src="./images/sns_facebook.png" alt="패이스북"></a></div>
               <div class="img-box"><a href="#"><img src="./images/sns_instagram.png" alt="인스타그램"></a></div>
+              <div class="img-box"><a href="#"><img src="./images/sns_smartstore.png" alt="스마트스토어"></a></div>
             </div>
             <address>
               <span><b>주식회사 앤하우스</b> &nbsp;대표자 김대영 &nbsp;창업상담 1588-0656 &nbsp;고객센터 1588-8298 &nbsp;FAX 02-325-5199</span>
@@ -1203,43 +1224,42 @@
                   </ul>
                 </li>
                 <li>
-                  <span>메가 스토리</span>
+                  <span>메뉴소개</span>
                   <ul class="footer-sub-nav">
-                    <li><a href="#">브렌드</a></li>
-                    <li><a href="#">BI</a></li>
-                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">푸드</a></li>
+                    <li><a href="#">상품</a></li>
                   </ul>
                 </li>
                 <li>
-                  <span>메가 스토리</span>
+                  <span>매장</span>
                   <ul class="footer-sub-nav">
-                    <li><a href="#">브렌드</a></li>
-                    <li><a href="#">BI</a></li>
-                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">매장찾기</a></li>
                   </ul>
                 </li>
                 <li>
-                  <span>메가 스토리</span>
+                  <span>창업안내</span>
                   <ul class="footer-sub-nav">
-                    <li><a href="#">브렌드</a></li>
-                    <li><a href="#">BI</a></li>
-                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">개설비용</a></li>
+                    <li><a href="#">인테리어</a></li>
+                    <li><a href="#">창업문의</a></li>
+                    <li><a href="#">창업뉴스</a></li>
                   </ul>
                 </li>
                 <li>
-                  <span>메가 스토리</span>
+                  <span>메가소식</span>
                   <ul class="footer-sub-nav">
-                    <li><a href="#">브렌드</a></li>
-                    <li><a href="#">BI</a></li>
-                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">고객의 소리</a></li>
                   </ul>
                 </li>
                 <li>
-                  <span>메가 스토리</span>
+                  <span>제휴문의</span>
                   <ul class="footer-sub-nav">
-                    <li><a href="#">브렌드</a></li>
-                    <li><a href="#">BI</a></li>
-                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">상품제안</a></li>
+                    <li><a href="#">마케팅 제휴</a></li>
                   </ul>
                 </li>
               </ul>
@@ -1257,7 +1277,7 @@
   <script>
     // --------- 섹션 스와이퍼 시작 -----------
       //섹션 슬라이드 초기화
-    const secSwiper = new Swiper('.sec-swiper', {      
+    const secSwiper = new Swiper('.sec-swiper', {
       direction: 'vertical',
       mousewheel:true,
       speed:1000,
@@ -1271,7 +1291,7 @@
       secSwiper.mousewheel.disable();
     })
       //섹션 슬라이드 휠 방향에 따른 휠 잠금 방향
-    window.onwheel = function(e){      
+    window.onwheel = function(e){
       if($('.sec05').hasClass('swiper-slide-active')){
         if(e.deltaY>=0){
           secSwiper.mousewheel.disable();
@@ -1310,7 +1330,7 @@
     // main-swiper END ----------------
 
     // menu-swiper  START -------------
-    const menuSwiper = new Swiper('.menu-swiper',{       
+    const menuSwiper = new Swiper('.menu-swiper',{
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -1325,7 +1345,7 @@
       height:autoHeight($('.sec03 .iframe-box').width()),
     })
 
-    $('.header').mouseenter(function(){      
+    $('.header').mouseenter(function(){
       setActive($(this));
     })
     $('.header').mouseleave(function(){
@@ -1371,10 +1391,10 @@
     })
 
     // 모바일 내비게이션
-    $('.btn-nav').click(function(){      
+    $('.btn-nav').click(function(){
       setActive($('nav'));
     })
-    $('.btn-nav-close').click(function(){      
+    $('.btn-nav-close').click(function(){
       removeActive($('nav'));
     })   
     $('.main-nav').children('li').click(function(e){
